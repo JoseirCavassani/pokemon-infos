@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Poke-API</title>
+</head>
+
+<body>
+    <header>
+        <nav>POKEMON</nav>
+    </header>
+
+    <!--  -->
+
+    <main id="principal">
+
+        <div id="pokeSearch">
+            <input type="text" id="pokeName" placeholder="Type pokemon name">
+            <button onclick="getName()">SEARCH</button>
+        </div>
+
+        <div>
+            <h2 id="pokeNameResult"></h2>
+            <label for="">Normal Version</label>
+            <img src="" alt="image pokemon" id="poke-img">
+            <label for="">Shiny Version</label>
+            <img src="" alt="image pokemon shiny" id="poke-img-shiny">
+            <h3>Types</h3>
+            <p id="type-one"></p>
+            <p id="type-two"></p>
+            <p id="type-plus"></p>
+            <p></p>
+        </div>
+
+    </main>
+
+    <!-- js -->
+    <script src="js/pokeapi.js"></script>
+</body>
+
+</html>
