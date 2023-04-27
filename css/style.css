@@ -1,5 +1,99 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.cdnfonts.com/css/pokemon-hollow');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;500;700&display=swap');
+/* font-family: 'Pokemon Hollow', sans-serif;
+font-family: 'Pokemon Solid', sans-serif; */
+
+* {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 1px;
+    text-transform: capitalize;
+}
+
+:root {
+    --poke-font-solid: 'Pokemon Solid', sans-serif;
+    --poke-font-hollow: 'Pokemon Hollow', sans-serif;
+    --font-primary: 'Encode Sans Condensed', sans-serif;
+}
+
+header {
+    border: 1px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.poke-title {
+    font-family: var(--poke-font-solid);
+    font-size: 45px;
+    color: #222;
+}
+
 #principal {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+#pokeName,
+.btn {
+    height: 40px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #444;
+    color: #f5f5f5;
+    width: 100px;
+}
+
+
+.poke-basic--info {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+#pokeNameResult {
+    font-size: 35px;
+}
+
+#idPokedex {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.poke-img {
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box-version {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: darkgoldenrod; */
+    width: 100%;
+}
+
+.poke-version-img {
+    background-color: #f5f5f5;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.shiny {
+    background-color: #E3F2C1;
+    padding: 5px;
+
 }

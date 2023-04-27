@@ -1,14 +1,17 @@
 // start test
+
+//
 document.addEventListener("onclick", getName);
 
 function getName() {
-  const pokemonName = document.getElementById("pokeName").value;
+  const pokemonName = document.getElementById("pokeName").value.toLowerCase();
   console.log("NOME DO POKEMON => " + pokemonName);
   pokeapi(pokemonName);
 }
 
 //function
 async function pokeapi(pokemonName) {
+  // pokemonName = "eevee";
   const base_url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
 
   await fetch(`${base_url}`)
@@ -42,9 +45,8 @@ async function pokeapi(pokemonName) {
           corpo.types[1].type.name;
       }
       // ############
-
-      //   pokeNameResult = document.getElementById("type-plus").innerHTML =
-      //     corpo.types[2].type.name;
+      idPokedex = document.getElementById("idPokedex").innerHTML =
+        "#" + corpo.id;
     })
     .catch(function (error) {
       console.log("error => " + error);

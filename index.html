@@ -11,7 +11,9 @@
 
 <body>
     <header>
-        <nav>POKEMON</nav>
+        <nav>
+            <h1 class="poke-title">POKEMON</h1>
+        </nav>
     </header>
 
     <!--  -->
@@ -20,15 +22,24 @@
 
         <div id="pokeSearch">
             <input type="text" id="pokeName" placeholder="Type pokemon name">
-            <button onclick="getName()">SEARCH</button>
+            <button onclick="getName()" class="btn">SEARCH</button>
         </div>
 
-        <div>
+        <div class="poke-basic--info">
             <h2 id="pokeNameResult"></h2>
-            <label for="">Normal Version</label>
-            <img src="" alt="image pokemon" id="poke-img">
-            <label for="">Shiny Version</label>
-            <img src="" alt="image pokemon shiny" id="poke-img-shiny">
+            <p id="idPokedex"></p>
+            <div class="poke-img">
+                <div class="box-version">
+                    <p class="poke-version-img">Normal Version</p>
+                    <p class="poke-version-img shiny">Shiny Version</p>
+                </div>
+                <div>
+                    <img src="" alt="image pokemon" id="poke-img">
+                    <img src="" alt="image pokemon shiny" id="poke-img-shiny">
+                </div>
+            </div>
+            <div>
+            </div>
             <h3>Types</h3>
             <p id="type-one"></p>
             <p id="type-two"></p>
